@@ -1,15 +1,17 @@
 <h1 align="center">MeshSplatting: Differentiable Rendering with Opaque Meshes</h1>
-
-<div align="center">
-  <a href="https://meshsplatting.github.io/meshsplatting/">Project page</a> &nbsp;|&nbsp;
-  <a href="https://arxiv.org/abs/2509.25122">Arxiv</a> &nbsp;|&nbsp; 
-  <a href="https://arxiv.org/abs/2509.25122">Real-time viewer</a> &nbsp;&nbsp; 
-</div>
-<br>
-
 <p align="center">
   Jan Held, Sanghyun Son, Renaud Vandeghen, Daniel Rebain, Matheus Gadelha, Yi Zhou, Anthony Cioppa, Ming C. Lin, Marc Van Droogenbroeck, Andrea Tagliasacchi
 </p>
+
+<div align="center">
+  <a href="https://meshsplatting.github.io/meshsplatting/">Project page</a> &nbsp;|&nbsp;
+  <a href="https://arxiv.org/abs/2509.25122">Arxiv</a> &nbsp; 
+</div>
+<br>
+
+<div align="center">
+🚀 Real-time viewer coming soon, stay tuned 🚀
+</div>
 
 <br>
 
@@ -18,7 +20,6 @@
 </div>
 
 ⭐️ This repo contains the official implementation for the paper "MeshSplatting: Differentiable Rendering with Opaque Meshes". ⭐️
-
 
 
 ## Cloning the Repository + Installation
@@ -124,16 +125,15 @@ To save your optimized scene after training, just run:
 python create_ply.py <output_model_path>
 ```
 
-## Download optimized ply files (+-50MB)
+## Download optimized ply files (+-100MB)
 
-If you want to run some scene on a game engine for yourself, you can download the Garden, Bicycle or Truck scenes from the following <a href="https://drive.google.com/drive/folders/1HMddW9_OMG2UCBWoJmspkoXBplf2PH5x">link</a>. To achieve the highest visual quality, you should use 4× supersampling.
-
+If you want to run some scene on a game engine for yourself, you can download the <em>Garden</em> and <em>Room</em> scenes from the following <a href="https://drive.google.com/drive/folders/1fHMm1-asUx8pJbKZC_3jHhBx5ZMoTDP3" target="_blank">link</a>.
+To achieve the highest visual quality, you should use 4× supersampling.
+Note that all PLY files store only RGB colors, which on average leads to a 2 dB drop in PSNR. For the highest visual quality, please refer to our viewer.
 
 ## Download the Unity project to explore physics-based interactions and walkable scenes
 
 If you want to try out physics interactions or explore the environment with a character, you can download the Unity project from the link below: <a href="https://drive.google.com/drive/folders/1XzCqfYbsB7Ff9HI6B90AtWM-9VKTsLel">link</a>. To achieve the highest visual quality, you should use 4× supersampling.
-
-
 
 ## Object Extraction
 First, you need to create a mask of the objects you want to extract. 
