@@ -62,7 +62,7 @@ if __name__ == "__main__":
             os.remove(dst_path)
         os.symlink(src_path, dst_path)
 
-    checkpoint = "sam2.1_hiera_large.pt"
+    checkpoint = "checkpoints/sam2.1_hiera_large.pt"
     model_cfg = "configs/sam2.1/sam2.1_hiera_l.yaml"
     predictor = build_sam2_video_predictor(model_cfg, checkpoint)
 
