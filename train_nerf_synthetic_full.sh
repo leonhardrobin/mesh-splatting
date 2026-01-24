@@ -27,7 +27,10 @@ for scene in "${SCENES[@]}"; do
         -s "$SOURCE_PATH" \
         -m "$MODEL_OUTPUT" \
         --eval
-    
+
+    python render.py \
+        -m "$MODEL_OUTPUT" \
+
     echo "Finished processing $scene"
 done
 
